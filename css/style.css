@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+body {padding: 0; margin: 0; font-family: 'Noto Sans', sans-serif; font-size: 14px; letter-spacing: -0.03em;}
+button {outline: none;}
+h1, h2, h3, h4, h5, h6, p, ul {margin: 0; padding: 0;}
+ul {list-style: none;}
+li, button {cursor: pointer;}
+img {display: block;}
+
+/* sideBar */
+#sideBar {position: fixed; top: 0; right: 0; width: 300px; height: 100vh; margin-right: -300px; padding: 20px 30px; z-index: 60; background: #fff;}
+.sideTop {width: 100%; display: flex; justify-content: space-between; padding: 20px 10px;}
+.sideTop h3 {color: #484848;}
+.close {font-size: 1.1em; cursor: pointer; color: #ff5b93;}
+.menu {width: 100%; line-height: 40px; padding: 0 20px; transition: .3s;}
+.menu:hover {color: #ff5b93;}
+#sns h4 {color: #484848; padding: 30px 10px 20px;}
+#sns {width: 100%;}
+#social {width: 100%; font-size: 2em; text-align: center;}
+.snsIcon {margin-right: 10px; color: #2f8494; cursor: pointer;}
+.snsIcon:last-child {margin-right: 0;}
+
+/* wrap */
+#wrap {width: 100%;}
+
+/* header */
+#header {width: 100%; position: relative;}
+#top {position: fixed; z-index: 50; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 25px 30px; color: #fff;}
+#logo h3 {font-size: 1.5em;}
+#sideOpenBt {cursor: pointer;}
+.sideIcon {font-size: 1.5em;}
+#title {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center; padding: 55px 80px; background: rgba(53, 142, 160, 0.6);}
+#title h1 {font-size: 2.4em; letter-spacing: 4px;}
+#title p {font-size: 1.1em; margin-top: -2px;}
+
+/* video */
+#myVideo {width: 100%;  height: 95vh; object-fit: cover;}
+
+/* section */
+.section {width: 100%; display: flex; flex-wrap: wrap; margin: 0 auto; align-items: center; justify-content: center;}
+.topBox {width: 100%; display: flex; justify-content: center; align-items: center; padding: 30px 20px;}
+
+/* section A */
+#secA {max-width: 1200px; padding: 30px 0 50px;}
+.titleBoxA {width: 60%;}
+.titleBoxA h2 {color: #484848; font-size: 1.8em;}
+.btBoxA {width: 40%; text-align: right; position: relative;}
+.btBoxA button {padding: 12px 20px; border: none; border-radius: 25px; background: #3d3d3d; color: #fff; transition: .3s; font-size: 12px;}
+.btBoxA button:hover {opacity: .7;}
+#layerPop {position: absolute; z-index: 30; background: #fff; width: 50%; top: 55px; right: 20px; padding: 30px; font-size: 12px; border-radius: 25px; text-align: left; display: none; cursor: pointer; box-shadow: 5px 5px 5px #232323; color: #424242;}
+#imgBoxA {width: 100%; display: flex; flex-wrap: wrap; justify-content: center;}
+.boxA {width: calc(33% - 10px); margin-right: 10px; margin-top: 10px; overflow: hidden; cursor: pointer; position: relative;}
+.boxA:nth-child(3n) {margin-right: 0;}
+.boxA:hover img {transform: scale(1.5, 1.5); transition: .5s;}
+#imgBoxA{margin-bottom: 50px;}
+#imgBoxA img {width: 100%; display: block;}
+.captionA {position: absolute; top: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); opacity: 0;}
+.boxA:hover .captionA {opacity: 1; transition: .5s;}
+.moreBt {position: absolute; top: 50%; left: 50%; border: none; transform: translate(-50%, -50%); padding: 10px 20px; border-radius: 25px; background: rgba(63, 81, 181, .6); color: #fff;}
+
+/* section B */
+#secB {background: url(../img/sunset.jpg) no-repeat; background-position: center; background-size: cover; background-attachment: fixed;}
+#boxB {width: 100%; height: 100%; background: rgba(250, 207, 191, .5); display: flex; flex-wrap: wrap; justify-content: center; padding: 30px 0;}
+.titleBoxB {text-align: center; color: #fff; width: 100%; height: 120px; padding-top: 50px;}
+.titleBoxB h2 {font-size: 1.8em;}
+.iconBoxB {width: calc(33% - 10px); margin-right: 10px; padding-top: 30px; height: 300px; text-align: center; color: #fff;}
+.iconBoxB:last-child {margin-right: 0;}
+.iconB {font-size: 4em; padding: 10px 0 4px;}
+.iconBoxB h2 {padding: 10px;}
+.iconBoxB p {text-align: justify; width: 250px; margin: 0 auto; font-size: 14px;}
+
+/* section C */
+#secC {max-width: 1200px; padding: 45px 0;}
+.titleBoxC {width: 60%;}
+.titleBoxC h2 {font-size: 1.8em; color: #484848;}
+.btBoxC {width: 40%; text-align: right;}
+.btBoxC button {padding: 12px 20px; border: none; border-radius: 25px; background: #3d3d3d; color: #fff; transition: .3s; font-size: 12px;}
+.btBoxC button:hover {opacity: .7;}
+#boxC {width: 100%; display: flex; justify-content: center; flex-wrap: wrap; padding-top: 5px;}
+.imgBoxC {width: calc(33% - 15px); margin-right: 15px; margin-bottom: 50px;}
+.imgBoxC:last-child {margin-right: 0;}
+.imgBoxC img {display: block; width: 100%;}
+.textBoxC {padding: 25px 10px;}
+.textBoxC h3 {padding-bottom: 8px; color: #4c4848;}
+.textBoxC p {font-style: italic; color: #4b4a4a;}
+.infoC {text-align: justify; padding: 15px 0 25px; font-style: normal !important; color: #6b6b6b !important;}
+.textBoxC button {padding-bottom: 4px; border: 1px solid #178b98; border-radius: 25px; background: none; padding: 10px 20px; cursor: pointer; color: #4b4a4a; transition: .3s;}
+.textBoxC button:hover {background: #178b98; color: #fff;}
+
+/* section D */
+#secD {background: url(../img/furniture.jpg) no-repeat; background-position: center; background-size: cover; background-attachment: fixed;}
+#boxD {width: 100%; height: 420px; background: rgba(151, 244, 255, 0.5); display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+#infoBoxD {position: relative; width: 80%; height: 100%; overflow: hidden;}
+#textBoxD {color: #fff; text-align: center; top: -100%; position: absolute; left: 50%; transform: translate(-50%, -50%); width: 100%;}
+#textBoxD p {font-size: 1.5em;}
+#textBoxD button {background: #2196F3; border: none; border-radius: 25px; padding: 15px 30px; color: #fff; margin-top: 40px; transition: .3s; font-size: 1em;}
+#textBoxD button:hover {background: rgb(73, 172, 253);}
+
+/* section E */
+#secE {max-width: 1200px; padding: 20px 0;}
+.titleBoxE {width: 100%; padding-top: 40px; text-align: center;}
+.titleBoxE h2 {font-size: 1.8em; color: #484848;}
+.imgBoxE {width: calc(33% - 15px); margin-right: 15px; margin: 25px 0 60px; transition: 1s;}
+.imgBoxE:last-child {margin-right: 0;}
+.imgBoxE img {display: block; width: 70%; margin: 30px auto; border-radius: 100%;}
+.textBoxE {text-align: center; padding: 0 20px;}
+.textBoxE h4 {font-size: 1.2em;}
+
+/* section F */
+#secF {background: url(../img/beach.jpg) no-repeat; background-position: center; background-size: cover; background-attachment: fixed;}
+#boxF {width: 100%; height: 100%; background: rgba(0, 133, 144, .5); display: flex; flex-wrap: wrap; justify-content: center; padding: 30px 0;}
+.titleBoxF {width: 100%; height: 120px; padding: 40px 0 30px; text-align: center; color: #fff;}
+.titleBoxF h2 {font-size: 1.8em;}
+.inputBox {width: 50%; height: 380px; color: #fff;}
+.inputStyle {width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #fff; background: transparent; margin: 10px 0; outline: none; color: #fff;}
+input::placeholder, textarea::placeholder {font-family: 'Noto Sans', sans-serif; color: #fff;}
+.send {border: none; border-radius: 25px; padding: 10px 25px; float: right; margin: 10px 0; background: #fff; color: #478880; transition: .3s; font-size: 1em;}
+.send:hover {background: #478880; color: #fff ;}
+
+/* footer */
+#foot {width: 100%; background: rgb(0, 133, 144); height: 100px; display: flex; justify-content: space-between; align-items: center;}
+.copyright {display: flex; justify-content: space-between; align-items: center; color: #fff; width: 80%; margin: 0 auto; flex-wrap: wrap;}
+.copyright p {color: #a3ced1; padding: 0 20px;}
+
+/* scroll top button */
+#scrollTopBt {width: 100%; display: none; position: fixed; z-index: 40; bottom: 0; padding: 20px; font-size: 2em; color: #006477;}
+.scrollTopIcon {cursor: pointer; float: right;}
+
+/* modal */
+#modal {position: fixed; top: 0; background: rgba(0,0,0,.6); width: 100%; height: 100%; z-index: 60; display: none; justify-content: center; align-items: center; cursor: pointer; flex-wrap: wrap;}
+.modalClose {cursor: pointer; position: absolute; color: #fff; top: 0; right: 0; padding: 20px; font-size: 2em;}
+#modal img {width: 60%;}
+.photoName {position: absolute; color: rgba(255, 255, 255, 0.8); font-size: 2.5em; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.slideBt {color: #fff; font-size: 3em; position: absolute;}
+#left {left: 15%;}
+#right {right: 15%;}
+
+/* media max-width 1024 */
+@media screen and (max-width: 1024px) {
+    .boxA{width: 80%; margin-right: 0;}
+    .imgBoxC {width: 80%; margin-right: 0;}
+    .titleBoxA, .titleBoxC {padding-left: 60px;}
+    .btBoxA, .btBoxC {padding-right: 60px;}
+    .imgBoxC {margin-bottom: 10px;}
+}
+
+/* media max-width 768 */
+@media screen and (max-width: 768px) {
+    .iconBoxB {width: 100%;}
+    .imgBoxE {width: 60%; margin-right: 0; margin-bottom: 10px;}
+    .inputBox {width: 70%;}
+    .copyright p {width: 100%; margin: 4px;}
+    .titleBoxA, .titleBoxC {width: 100%; padding-left: 0px; text-align: center;}
+    .btBoxA, .btBoxC {padding-right: 20px;}
+    #title {padding: 55px 65px;}
+    #title p {display: none;}
+    .btBoxA, .btBoxC {display: none;} 
+    #textBoxD p {font-size: 1.2em;}
+    #secE {padding: 20px 0 60px;}
+    .imgBoxE img {width: 100%;}
+    #modal img {width: 90%;}
+}
